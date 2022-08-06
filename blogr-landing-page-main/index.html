@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="./main.js"></script>
+
+		<title>Frontend Mentor | [Blogr]</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row align-center desktop-row-start">
+					<img src="./images/logo.svg" alt="Blogr Logo" />
+					<img
+						id="mobile-nav-menu-toggle"
+						class="mobile"
+						src="./images/icon-hamburger.svg"
+						alt="Mobile Navigation Menu Toggler"
+					/>
+					<nav class="desktop row text-align-center">
+						<div class="row">
+							<div class="nav-unit">
+								<div
+									class="toggle row align-baseline justify-center nav-toggle-desktop"
+									data-nav-target="product-nav-desktop"
+								>
+									<h3>Product</h3>
+									<img
+										src="./images/icon-arrow-light.svg"
+										alt="unexpanded navigation"
+									/>
+								</div>
+								<ul
+									id="product-nav-desktop"
+									class="nav-dropdown-desktop hidden nav-list"
+								>
+									<li>Overview</li>
+									<li>Pricing</li>
+									<li>Marketplace</li>
+									<li>Features</li>
+									<li>Integrations</li>
+								</ul>
+							</div>
+							<div class="nav-unit">
+								<div
+									class="toggle row align-baseline justify-center nav-toggle-desktop"
+									data-nav-target="company-nav-desktop"
+								>
+									<h3>Company</h3>
+									<img
+										src="./images/icon-arrow-light.svg"
+										alt="unexpanded navigation"
+									/>
+								</div>
+								<ul
+									id="company-nav-desktop"
+									class="nav-dropdown-desktop hidden nav-list"
+								>
+									<li>About</li>
+									<li>Team</li>
+									<li>Blog</li>
+									<li>Careers</li>
+								</ul>
+							</div>
+							<div class="nav-unit">
+								<div
+									class="toggle row align-baseline justify-center nav-toggle-desktop"
+									data-nav-target="connect-nav-desktop"
+								>
+									<h3>Connect</h3>
+									<img
+										src="./images/icon-arrow-light.svg"
+										alt="unexpanded navigation"
+									/>
+								</div>
+								<ul
+									id="connect-nav-desktop"
+									class="nav-dropdown-desktop hidden nav-list"
+								>
+									<li>Contact</li>
+									<li>Newsletter</li>
+									<li>LinkedIn</li>
+								</ul>
+							</div>
+						</div>
+						<div class="justify-self-end">
+							<button class="background-none">Login</button>
+							<button>Sign Up</button>
+						</div>
+					</nav>
+				</div>
+				<dialog class="mobile">
+					<div class="container dlg">
+						<div
+							class="toggle row align-baseline justify-center"
+							data-nav-target="product-nav"
+						>
+							<h3>Product</h3>
+							<img
+								src="./images/icon-arrow-dark.svg"
+								alt="unexpanded navigation"
+							/>
+						</div>
+						<ul id="product-nav" class="hidden nav-list">
+							<li>Overview</li>
+							<li>Pricing</li>
+							<li>Marketplace</li>
+							<li>Features</li>
+							<li>Integrations</li>
+						</ul>
+
+						<div
+							class="toggle row align-baseline justify-center"
+							data-nav-target="company-nav"
+						>
+							<h3>Company</h3>
+
+							<img
+								src="./images/icon-arrow-dark.svg"
+								alt="unexpanded navigation"
+							/>
+						</div>
+						<ul id="company-nav" class="hidden nav-list">
+							<li>About</li>
+							<li>Team</li>
+							<li>Blog</li>
+							<li>Careers</li>
+						</ul>
+
+						<div
+							class="toggle row align-baseline justify-center"
+							data-nav-target="connect-nav"
+						>
+							<h3>Connect</h3>
+							<img
+								src="./images/icon-arrow-dark.svg"
+								alt="unexpanded navigation"
+							/>
+						</div>
+						<ul id="connect-nav" class="hidden nav-list">
+							<li>Contact</li>
+							<li>Newsletter</li>
+							<li>LinkedIn</li>
+						</ul>
+						<div class="divider"></div>
+						<div class="col">
+							<button class="text-black">Login</button>
+							<button class="theme-gradient">Sign Up</button>
+						</div>
+					</div>
+				</dialog>
+				<section class="text-align-center">
+					<h1>A modern publishing platform</h1>
+					<p>Grow your audience and build your online brand</p>
+
+					<span>
+						<button>Start for Free</button>
+						<button class="theme-inverse">Learn More</button>
+					</span>
+				</section>
+			</div>
+		</header>
+		<main>
+			<section id="right-image-container">
+				<div class="container">
+					<h2 class="text-align-center">Designed for the future</h2>
+					<div class="desktop-row reverse-row">
+						<div class="desktop-col">
+							<img
+								class="mobile"
+								src="./images/illustration-editor-mobile.svg"
+								alt="Editor"
+							/>
+						</div>
+						<div class="desktop-col">
+							<h3>Introducing an extensible editor</h3>
+							<p>
+								Blogr features an exceedingly intuitive interface which lets you
+								focus on one thing: creating content. The editor supports
+								management of multiple blogs and allows easy manipulation of
+								embeds such as images, videos, and Markdown. Extensibility with
+								plugins and themes provide easy ways to add functionality or
+								change the looks of a blog.
+							</p>
+
+							<h3>Robust content management</h3>
+							<p>
+								Flexible content management enables users to easily move through
+								posts. Increase the usability of your blog by adding customized
+								categories, sections, format, or flow. With this functionality,
+								you’re in full control.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-dark curved-borders">
+				<div class="container desktop-row">
+					<div class="desktop-col">
+						<img
+							class="fixed-overlay"
+							src="./images/illustration-phones.svg"
+							alt="Two Cell Phones"
+						/>
+					</div>
+					<div class="desktop-col">
+						<h2>State of the Art Infrastructure</h2>
+						<p>
+							With reliability and speed in mind, worldwide data centers provide
+							the backbone for ultra-fast connectivity. This ensures your site
+							will load instantly, no matter where your readers are, keeping
+							your site competitive.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="desktop-row">
+					<div class="desktop-col">
+						<img
+							class="mobile"
+							src="./images//illustration-laptop-mobile.svg"
+							alt="Laptop"
+						/>
+						<img
+							class="desktop left-offset-image"
+							src="./images//illustration-laptop-desktop.svg"
+							alt="Laptop"
+						/>
+					</div>
+					<div class="desktop-col">
+						<h3>Free, open, simple</h3>
+						<p>
+							Blogr is a free and open source application backed by a large
+							community of helpful developers. It supports features such as code
+							syntax highlighting, RSS feeds, social media integration,
+							third-party commenting tools, and works seamlessly with Google
+							Analytics. The architecture is clean and is relatively easy to
+							learn.
+						</p>
+
+						<h3>Powerful tooling</h3>
+						<p>
+							Batteries included. We built a simple and straightforward CLI tool
+							that makes customization and deployment a breeze, but capable of
+							producing even the most complicated sites.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="desktop-row justify-evenly">
+			<img class="align-self-start" src="./images/logo.svg" alt="Blogr logo" />
+			<ul>
+				<h3>Product</h3>
+				<li>Overview</li>
+				<li>Pricing</li>
+				<li>Marketplace</li>
+				<li>Features</li>
+				<li>Integrations</li>
+			</ul>
+
+			<ul>
+				<h3>Company</h3>
+				<li>About</li>
+				<li>Team</li>
+				<li>Blog</li>
+				<li>Careers</li>
+			</ul>
+
+			<ul>
+				<h3>Connect</h3>
+				<li>Contact</li>
+				<li>Newsletter</li>
+				<li>LinkedIn</li>
+			</ul>
+		</footer>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">dgjenni2</a>.
+		</div>
+	</body>
+</html>
